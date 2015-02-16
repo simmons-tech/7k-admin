@@ -1,0 +1,24 @@
+* Model structures:
+**  Pic
+  - Pic name
+  - local path
+  - creator
+  - approved
+** Display
+  - Pic foreign key
+  - Start datetime (or null)
+  - End datetime (or null)
+  - scheduled_by (user)
+
+* Interface:
+
+** Nonadmins:
+  - create Pics,
+  - view their pics
+
+** Admins:
+  - Approve new pics
+  - Schedule pics for display
+
+** 7k:
+  - Per-window panels to put on 7k
