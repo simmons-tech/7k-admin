@@ -3,6 +3,8 @@ from django.contrib import admin
 
 from pics import views as pics_views
 
+admin.autodiscover()
+
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'admin7k.views.home', name='home'),
