@@ -4,6 +4,9 @@ Options +ExecCGI
 RewriteEngine On
 RewriteBase /admin7k
 
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} 
+
 RewriteRule ^(static.*)$ - [L]
 
 RewriteCond %{REQUEST_URI} ^/admin7k/$
