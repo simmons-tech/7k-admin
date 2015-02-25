@@ -8,6 +8,7 @@ https://docs.djangoproject.com/en/1.7/howto/deployment/wsgi/
 """
 
 import os
+os.environ.setdefault("EXTERNAL_CONFIG", "/var/www/apache_config/admin7k")
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "admin7k.settings")
 
 import sys
