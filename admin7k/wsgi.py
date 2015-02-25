@@ -7,6 +7,9 @@ For more information on this file, see
 https://docs.djangoproject.com/en/1.7/howto/deployment/wsgi/
 """
 
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
 import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "admin7k.settings")
 

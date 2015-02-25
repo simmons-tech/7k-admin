@@ -1,0 +1,16 @@
+AddHandler wsgi-script .py
+Options +ExecCGI
+
+RewriteEngine On
+RewriteBase /admin7k
+
+RewriteRule ^(static.*)$ - [L]
+
+RewriteCond %{REQUEST_URI} ^/admin7k/$
+RewriteRule ^$ admin7k/wsgi.py [L]
+
+RewriteCond %{REQUEST_URI} !/admin7k/admin7k/wsgi.py
+RewriteRule ^(.*)$ admin7k/wsgi.py/$1 [L]
+
+SSLVerifyClient require
+SSLOptions +StdEnvVars
