@@ -11,6 +11,6 @@ def home(request):
     return render(request, 'home.html', {'user_name': user_name, 'user_email': user_email})
 
 def render_7k(request):
-    return HttpResponseRedirect(static('img/canvas.png'))
-    #with open(os.path.join(settings.EXTERNAL_CONFIG, 'canvas.png'), "rb") as f:
-    #    return HttpResponse(f.read(), content_type="image/png")
+    #return HttpResponseRedirect(static('img/canvas.png'))
+    with open(os.path.join(settings.EXTERNAL_CONFIG, 'canvas.png'), "rb") as f:
+        return HttpResponse(f.read(), content_type="image/png")
