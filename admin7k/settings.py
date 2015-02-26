@@ -92,7 +92,7 @@ STATICFILES_DIRS = (
 STATIC_URL = '/7kadmin/static/'
 
 # Load local settings if they exist
-try:
-    from local_settings import *
-except ImportError, exp:
-    pass
+#try:
+#    from local_settings import *
+#except ImportError, exp:
+#    pass
