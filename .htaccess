@@ -15,5 +15,5 @@ RewriteRule ^$ admin7k/wsgi.py [L]
 RewriteCond %{REQUEST_URI} !/admin7k/admin7k/wsgi.py
 RewriteRule ^(.*)$ admin7k/wsgi.py/$1 [L]
 
-SSLVerifyClient require
+SSLVerifyClient optional
 SSLOptions +StdEnvVars
