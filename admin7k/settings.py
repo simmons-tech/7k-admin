@@ -96,3 +96,4 @@ STATIC_URL = '/7kadmin/static/'
 #    from local_settings import *
 #except ImportError, exp:
 #    pass
+PICS_ROOT = os.path.join(EXTERNAL_CONFIG, 'pics')
